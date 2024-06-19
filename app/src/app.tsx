@@ -25,6 +25,7 @@ import SetValueWithTrigger from './setValueWithTrigger';
 import IsValid from './isValid';
 import Controller from './controller';
 import UseFieldArray from './useFieldArray';
+import UseFieldArrayIssue from './useFieldArrayIssue';
 import UseFieldArrayNested from './useFieldArrayNested';
 import CustomSchemaValidation from './customSchemaValidation';
 import WatchFieldArray from './watchUseFieldArray';
@@ -69,6 +70,8 @@ const App: React.FC = () => {
         <Route path="/setValueWithTrigger" element={<SetValueWithTrigger />} />
         <Route path="/conditionalField" element={<ConditionalField />} />
         <Route path="/UseFieldArray/:mode" element={<UseFieldArray />} />
+        {/* test issue */}
+        <Route path="/Test" element={<UseFieldArrayIssue />} />
         <Route
           path="/UseFieldArrayUnregister"
           element={<UseFieldArrayUnregister />}
